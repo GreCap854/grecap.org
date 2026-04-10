@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #0f1a14;
+  --card: #14231b;
+  --accent: #2fbf71;
+}
+html, body { background: var(--surface); color: white; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: none; box-shadow: 0 0 0 2px var(--accent);
+}
+.sr-only:not(:focus):not(:active) { clip: rect(0 0 0 0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
